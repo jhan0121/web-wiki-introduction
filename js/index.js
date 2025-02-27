@@ -30,6 +30,7 @@ function addComment() {
   commentItem.appendChild(commentContent);
   li.appendChild(commentItem);
   document.querySelector(".comment-list").appendChild(li);
+  alert("댓글이 등록 되었습니다.");
   document.getElementById("comment-writing").value = "";
 }
 
