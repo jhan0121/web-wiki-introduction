@@ -75,6 +75,54 @@ div.thumbnail {
   margin-bottom: var(--page-paragraph-margin-y);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+textarea {
+  display: inline-block;
+  font: inherit;
+  flex-grow: 1;
+  border: 0;
+  vertical-align: middle;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  display: flex;
+  float: right;
+  width: 70px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-cancel-button {
+  border: 1px solid black;
+}
+
+.button.comment-submit {
+  background-color: #b6fff9;
+}
+
 section::after {
   content: "";
   display: block;
