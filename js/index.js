@@ -15,10 +15,10 @@ console.log(
     "    '/__//__/  /_____/ \\/_/\\/_/ /_____/",
   "color: #d81b60; font-size: 16px; font-weight: bold;"
 );
-
 function addComment() {
-  const textComment = document.getElementById("comment-writing").value;
-  if (textComment === "") {
+  let textComment = document.getElementById("comment-writing").value;
+  textComment = textComment.trim();
+  if (!textComment) {
     return;
   }
   const li = document.createElement("li");
