@@ -18,6 +18,9 @@ console.log(
 
 function addComment() {
   const textComment = document.getElementById("comment-writing").value;
+  if (textComment === "") {
+    return;
+  }
   const li = document.createElement("li");
 
   const commentItem = document.createElement("div");
