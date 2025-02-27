@@ -144,8 +144,12 @@ button {
   border: 1px solid black;
 }
 
-.button.comment-submit {
+.comment-submit-button {
   background-color: #b6fff9;
+}
+
+.comment-submit-button:hover {
+  background-color: #a8ede7;
 }
 
 section::after {
